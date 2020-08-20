@@ -1,0 +1,54 @@
+\documentclass[12pt]{report}
+\title{Generating Images With Rotational Pixels}
+\author{Jean-Dominique Stepek}
+\date{09/04/2019}
+\pagenumbering{roman}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+Typically, digital images can be viewed as a result of using multiple light sources (\textit{e.g.} LEDs, OLEDs, etc.) to emit a visible wavelength. In computer graphics, it is common for the color to be stored in memory as a tuple of red, green, and blue values (RBG) which can be referred to as a pixel. By creating a 2-dimensional matrix of colors, an image can be generated. Thus, to recreate an image of an \(\textbf{n}\times\textbf{m}\) color matrix there must be \(\textbf{n}\times\textbf{m}\) light sources, if the light source can only represent one color at a moment in time. Representing this color matrix with fewer light sources than the product of the number of rows and number of columns will be investigated. The potential of using less light sources has several applications including reducing energy usage and manufacturing cost of a display. 
+\end{abstract}
+
+\tableofcontents
+ 
+\section{First section}
+\setcounter{page}{3}
+ 
+Some text here...
+ 
+\section{Second section}
+Some more text here..
+ 
+\section{Heading on Level 1 (section)}
+\pagenumbering{arabic}
+ 
+More text here...
+
+\end{document}
+
+\documentclass{book}
+\input{abstract.tex}
+
+\begin{document}
+\frontmatter
+\input{front-page.tex}
+
+\include{dedication.tex}
+
+\tableofcontents{}
+
+\mainmatter
+\include{introduction.tex}
+
+\include{chapter-1.tex}
+
+\include{...}
+
+\include{conclusions.tex}
+
+\include{bibliography.tex}
+
+\backmatter
+...
+\end{document}
